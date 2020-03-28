@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-const int INF = 1e7;
+const int INF = -10;
 typedef pair<int, int> P;
 
 char maze[200][200];
@@ -43,20 +43,27 @@ int BFS(){
 
 int main(){
     cin >> N >> M;
-    cin >> sx >> sy;
-    cin >> gx >> gy;
-    sy--;sx--;gy--;gx--;
     for(int i=0; i<N; i++)
 	cin >> maze[i];
 
-    cout<<  BFS() << endl;
+    sx = 0;
+    sy = 0;
+    gx = N-1;
+    gy = M-1;
+    
+    int ans=BFS();
 
-    // for(int i=0; i<N; i++){
-    // 	for(int j=0; j<M; j++){
-    // 	    printf("%10d\t", d[i][j]);
-    // 	}
-    // 	cout<< "\n";
-    // }
+    int cnt=0;
+    for(int i=0; i<N; i++){
+	for(int j=0; j<M; j++){
+	    if(maze[i][j]=='#')
+		cnt++;
+	}
+    }
+    if(ans==INF)
+	cout << -1 << endl;
+    else
+	cout << N*M-ans-1-cnt << endl;
 
 
     
