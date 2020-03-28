@@ -20,11 +20,11 @@ void bfs() {
     q.push(1);
 
     while(!q.empty()){
-	int node = q.front();
+	int v = q.front();
 	q.pop();
-	for(auto i: G[node]){
-	    q.push(i);
-	    cout << i << endl;
+	for(auto next_v: G[v]){
+	    q.push(next_v);
+	    cout << next_v << endl;
 	}
 
     }
