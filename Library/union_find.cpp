@@ -15,7 +15,7 @@ public:
     
     void init(int sz_) {
         par.resize(sz_);
-        siz.assign(sz_, 1);  // resize だとなぜか初期化されなかった
+        siz.assign(sz_, 1);  // 初期化されなかった
         for (int i = 0; i < sz_; ++i) par[i] = i; // 初期では親は自分自身
     }
 

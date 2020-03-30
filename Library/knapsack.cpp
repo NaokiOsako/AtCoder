@@ -16,12 +16,9 @@ int main() {
 
     
     int dp[N+1][W+1];//dp[item][weight]
-    int screen[N+1][W+1];//dp[item][weight]
         
-    for(int i=0; i<W+1; i++){
+    for(int i=0; i<W+1; i++)
 	dp[0][i] = 0;
-	screen[0][i] = 0;
-    }
 
     for(int i=1; i<N+1; i++){
 	for(int j=0; j<W+1; j++){
@@ -34,12 +31,12 @@ int main() {
     }
 
 
-    for(int i=0; i<N+1; i++){
-    	for(int j=0; j<W+1; j++){
-    	    cout << dp[i][j] << " ";        
-    	}
-    	cout << endl;        
-    }
+    // for(int i=0; i<N+1; i++){
+    // 	for(int j=0; j<W+1; j++){
+    // 	    cout << dp[i][j] << " ";        
+    // 	}
+    // 	cout << endl;        
+    // }
 
 
     cout << dp[N][W] << "\n";        
