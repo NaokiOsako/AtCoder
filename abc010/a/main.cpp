@@ -1,12 +1,17 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long int
+int main(){
+    // int A, B;
+    // cin >> A ;    
+    // cout << (A+1)/2<<endl;
 
-int main() {
-    int N, ans=0;
-    cin >> N;
+    string S;
+    cin >>S;
+    cout << S + "pp"<<endl;
 
-    cout << ans << endl;
-} 
-
-
+    // if(A%3==0)
+    // 	puts("YES");
+    // else
+    // 	puts("NO");
+	
+}

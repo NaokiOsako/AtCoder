@@ -1,12 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long int
 
-int main() {
-    int N, ans=0;
-    cin >> N;
+int main(){
+    string S;
+    cin >> S;
+    if('a'<=S[0])
+	S[0] -= 32;
 
-    cout << ans << endl;
-} 
-
-
+    for(int i=1; i<S.size(); i++){
+	if(S[i]<='Z')
+	    S[i] += 32;
+    }
+    cout << S << endl;
+    
+}
