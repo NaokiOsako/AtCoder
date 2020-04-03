@@ -1,12 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long int
 
-int main() {
-    int N, ans=0;
+int main(){
+    int N, ans=0, maxNum=0;
     cin >> N;
+    map<string, int> mp;
+    string s;
+    for(int i=0; i<N; i++){
+	cin >> s;
+	mp[s]++;
+	maxNum = max(maxNum, mp[s]);
+    }
 
-    cout << ans << endl;
-} 
+    for(auto itr = mp.begin(); itr != mp.end(); ++itr) {
+	if(maxNum == itr->second){
+	    cout << itr->first << endl;
+	    return 0;
+	}
+    }
 
+}
 

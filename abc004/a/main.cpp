@@ -1,12 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long int
-
-int main() {
-    int N, ans=0;
-    cin >> N;
-
-    cout << ans << endl;
-} 
-
-
+int main(){
+    int A;
+    cin >> A ;
+    cout << 2*A<<endl;
+}

@@ -1,12 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long int
+int main(){
+    int A, B;
+    cin >> A ;
+    cin >> B ;
 
-int main() {
-    int N, ans=0;
-    cin >> N;
-
-    cout << ans << endl;
-} 
-
-
+    cout << A-B<<endl;
+    
+}

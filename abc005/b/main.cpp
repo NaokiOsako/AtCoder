@@ -1,12 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long int
 
-int main() {
-    int N, ans=0;
-    cin >> N;
-
-    cout << ans << endl;
-} 
-
-
+int main(){
+    int n, minNum=2e9, a;
+    cin >> n;
+    for(int i=0; i<n; i++){
+	cin >> a;
+	minNum = min(a, minNum);
+    }
+    cout << minNum<<endl;    
+}

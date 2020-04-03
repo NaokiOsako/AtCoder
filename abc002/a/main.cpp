@@ -1,12 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long int
+int main(){
+    int A, B;
+    cin >> A >> B;
 
-int main() {
-    int N, ans=0;
-    cin >> N;
-
-    cout << ans << endl;
-} 
-
-
+    cout << max(A, B)<<endl;
+    
+}
