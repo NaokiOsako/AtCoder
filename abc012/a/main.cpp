@@ -1,12 +1,26 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long int
+int main(){
+    int A, B, C, ans;
+    cin >> A >> B;
+    ans = max(max(A, B), C) - min(min(A, B), C);
+    cout << B << " "<<A<< endl;
+    // if(A==12)
+    // 	cout << 1<<endl;
+    // else
+    // 	cout << A+1<<endl;
+    
 
-int main() {
-    int N, ans=0;
-    cin >> N;
+    // string S;
+    // cin >>S;
+    // cout << S + "pp"<<endl;
 
-    cout << ans << endl;
-} 
+    // if(A%2==1 && B%2==1)
+    // 	puts("Yes");
+    // else
+    // 	puts("No");
+	
+}
+
 
 

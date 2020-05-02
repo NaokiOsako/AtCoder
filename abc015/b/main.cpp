@@ -1,12 +1,18 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long int
 
-int main() {
-    int N, ans=0;
+int main(){
+    int N, K=0, sum=0, a;
+    string s;
     cin >> N;
 
-    cout << ans << endl;
-} 
+    for(int i=0; i<N; i++){
+	cin >> a;
+	sum += a;
+	if(a > 0)
+	    K++;
+    }
+    cout << ceil((double)sum/K) <<endl;
+}
 
 

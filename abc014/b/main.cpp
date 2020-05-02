@@ -1,12 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long int
 
-int main() {
-    int N, ans=0;
-    cin >> N;
+int main(){
+    int N, X, K=0, sum=0;
+    string s;
+    cin >> N >> X;
+    vector<int> a(N);
 
-    cout << ans << endl;
-} 
+    for(int i=0; i<N; i++){
+	cin >> a[i];
+    }
+    
+
+    for(int i=0; i<N; i++){
+	if((X>>i)&1 == 1)
+	    sum += a[i];
+    }
+
+    cout << sum <<endl;
+}
 
 

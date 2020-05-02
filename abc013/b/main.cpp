@@ -1,12 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long int
 
-int main() {
-    int N, ans=0;
-    cin >> N;
-
-    cout << ans << endl;
-} 
-
+int main(){
+    int a, b, ans;
+    cin >> a >> b;
+    ans = min(abs(b-a),  10-abs(b-a));
+    cout << ans <<endl;
+}
 
