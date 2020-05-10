@@ -5,7 +5,6 @@ using namespace std;
 int main() {
     ll x, ans=0, tmp, it;
     cin >> x;
-    
     for(ll i=-1e3; i<1e3; i++){
 	tmp = -(x-i*i*i*i*i);
 	if (tmp<=0) 
@@ -22,7 +21,6 @@ int main() {
 		break;
 	}
     }
-
 } 
 
 
